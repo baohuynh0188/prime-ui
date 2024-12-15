@@ -7,6 +7,17 @@
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/baohuynh0188/prime-ui.git"
+    },
+    "keywords": [
+        "library",
+        "react",
+        "storybook",
+        "tailwindcss",
+        "typescript"
+    ],
     "author": "baohuynh",
     "license": "ISC",
     "description": "",
