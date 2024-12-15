@@ -1,9 +1,15 @@
 {
     "name": "@insight/prime-ui",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "dist/index.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "node build.js && tsc --emitDeclarationOnly",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build"
     },
@@ -34,6 +40,7 @@
         "@types/react": "^19.0.1",
         "@types/react-dom": "^19.0.2",
         "autoprefixer": "^10.4.20",
+        "esbuild": "^0.24.0",
         "postcss": "^8.4.49",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
@@ -42,7 +49,9 @@
         "typescript": "^5.7.2"
     },
     "dependencies": {
+        "@radix-ui/react-label": "^2.1.1",
         "@radix-ui/react-slot": "^1.1.1",
+        "@radix-ui/react-toast": "^1.2.3",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
         "lucide-react": "^0.468.0",

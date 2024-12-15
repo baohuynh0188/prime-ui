@@ -5,9 +5,12 @@
         "outDir": "dist", // Output directory
         "jsx": "react-jsx", // For React 17+
         "moduleResolution": "node",
-        "target": "ES6",
-        "module": "ESNext",
+        "lib": ["dom", "esnext"], // Add DOM types
+        "target": "es2022",
+        "module": "esnext",
         "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
         "baseUrl": "./src",
         "paths": {
             "@/*": ["*"]
