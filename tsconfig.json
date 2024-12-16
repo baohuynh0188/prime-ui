@@ -4,7 +4,7 @@
         "emitDeclarationOnly": true, // Only output declaration files
         "outDir": "dist", // Output directory
         "jsx": "react-jsx", // For React 17+
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "lib": ["dom", "esnext"], // Add DOM types
         "target": "es2022",
         "module": "esnext",
